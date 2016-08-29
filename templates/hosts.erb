@@ -1,0 +1,9 @@
+# File managed by Puppet
+
+#
+# /etc/hosts: static lookup table for host names
+#
+
+#<ip-address> <hostname.domain.org> <hostname>
+127.0.0.1 <%= @hostname %> localhost.localdomain localhost
+::1   <%= @hostname %> localhost.localdomain localhost

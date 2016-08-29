@@ -1,0 +1,4 @@
+# File managed by Puppet
+
+# Disable internal card reader
+SUBSYSTEMS=="usb", ATTRS{idVendor}=="05ac", ATTRS{idProduct}=="8406", RUN+="/usr/local/sbin/remove_ignore_usb-device.sh 05ac 8406"

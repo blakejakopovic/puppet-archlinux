@@ -1,0 +1,8 @@
+# File managed by Puppet
+
+# Enable IPv6 Privacy Extensions
+net.ipv6.conf.all.use_tempaddr = 2
+net.ipv6.conf.default.use_tempaddr = 2
+<% @interfaces.split(',').reject{ |i| i == 'lo' }.each do |interface| -%>
+net.ipv6.conf.<%= interface %>.use_tempaddr = 2
+<% end %>

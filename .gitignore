@@ -1,0 +1,11 @@
+spec/fixtures
+.bundle/
+.vagrant
+*.swp
+log/
+Gemfile.lock
+.tmp/
+coverage/
+TODO
+pkg/
+.travis.yml

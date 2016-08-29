@@ -1,0 +1,4 @@
+# File managed by Puppet
+
+# Enable powersaving on all wireless interfaces
+ACTION=="add", SUBSYSTEM=="net", KERNEL=="wlan*", RUN+="/usr/bin/iw dev %k set power_save on"

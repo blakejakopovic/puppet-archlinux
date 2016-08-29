@@ -1,0 +1,5 @@
+# File managed by Puppet
+
+[Service]
+ExecStart=
+ExecStart=-/usr/bin/agetty --autologin <%= @default_user %> --noclear %I $TERM

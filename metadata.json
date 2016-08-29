@@ -1,0 +1,20 @@
+{
+  "name": "blakejakopovic-archlinux",
+  "version": "0.1.0",
+  "author": "Blake Jakopovic",
+  "summary": "Puppet module for Arch Linux",
+  "license": "Apache-2.0",
+  "source": "https://github.com/blakejakopovic/puppet-archlinux",
+  "project_page": "https://forge.puppetlabs.com/blakejakopovic/archlinux",
+  "issues_url": "https://github.com/blakejakopovic/puppet-archlinux/issues",
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Archlinux",
+      "operatingsystemrelease":[ "4.x" ]
+    }
+  ],
+  "dependencies": [
+    { "name": "puppetlabs-stdlib", "version_requirement": ">= 1.0.0" }
+  ],
+  "data_provider": null
+}

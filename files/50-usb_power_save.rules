@@ -1,0 +1,4 @@
+# File managed by Puppet
+
+# Whitelist for usb autosuspend
+ACTION=="add", SUBSYSTEM=="usb", TEST=="power/control", ATTR{idVendor}=="05c6", ATTR{idProduct}=="9205", ATTR{power/control}="auto"
