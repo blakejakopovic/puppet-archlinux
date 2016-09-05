@@ -23,7 +23,7 @@ Note: An internet connection (or package cache) is required
 When using a Puppet server
 
 ```
-$ sudo puppet module install blakejakopovic-archlinux
+sudo puppet module install blakejakopovic-archlinux
 
 # site.pp
 node 'mybox.home.net' {
@@ -38,8 +38,8 @@ node 'mybox.home.net' {
 When using in standalone mode (without Puppet master)
 
 ```
-$ sudo puppet module install blakejakopovic-archlinux
-$ sudo puppet apply -e "class { 'archlinux': default_user => 'blake', hostname => 'bach', timezone => 'Australia/Brisbane' }"
+sudo puppet module install blakejakopovic-archlinux
+sudo puppet apply -e "class { 'archlinux': default_user => 'blake', hostname => 'bach', timezone => 'Australia/Brisbane' }"
 ```
 
 Note: For existing systems, it's advisable to use the `--noop --verbose` flags, so you can review any changes that may occur.
